@@ -1,0 +1,503 @@
+body{
+  overflow-x: hidden;
+}
+.navbar-main{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* background-color: rgb(84, 171, 241); */
+  /* background: linear-gradient(180deg,rgb(84, 171, 241),aliceblue); */
+  background: linear-gradient(270deg,rgba(2, 0, 0, 0.76),black);
+  max-height: 10vh;
+  /* width: 100vw; */
+}
+.navbar{
+  /* background-color: yellowgreen; */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+.container-fluid{
+  display: flex;
+  align-items: center;
+  /* background-color: rgb(78, 164, 235); */
+  background: linear-gradient(90deg,rgb(4, 61, 78),black);
+}
+.container-fluid h3{
+  font-size: 2.5rem;
+  font-weight: 300;
+  /* text-align: center; */
+  margin-top: 2rem;
+  color: white;
+}
+.container-fluid h3 span{
+  color: rgb(231, 54, 54);
+}
+.container-fluid .collapse{
+  display: flex;
+  /* justify-content: center; */
+  position: relative;
+}
+.container-fluid .collapse .initial-Link-home{
+  visibility: hidden;
+}
+.container-fluid .collapse ul{
+  /* background-color: violet; */
+  width: 100%;
+  position: relative;
+  left: 45%;
+
+}
+.container-fluid .collapse ul li a{
+  font-size: 1.3rem;
+  margin-left: 1.2rem;
+  transition: 0.3s all ease-in-out;
+  color: white;
+  text-decoration: none;
+}
+.container-fluid .collapse ul li a:hover{
+  color:rgb(196, 195, 195);
+}
+
+
+.Home-main{
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 100%;
+  max-height:100% ;
+  /* background: url("../images/blue-toned-set-aligned-paper-sheets-with-copy-space.jpg"); */
+  background: linear-gradient(270deg,rgb(1, 42, 54),black);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+  
+}
+.imageSection{
+  /* background-color: aqua; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  /* flex-direction: column; */
+  
+
+}
+.imageSection img{
+  max-width: 40%;
+  flex-shrink: 0;
+  position: absolute;
+  transition: 0.3s all ease-in-out;
+  
+
+}
+.imageSection .image-orange-pattern{
+  z-index: 0;
+  position: relative;
+  max-width: 70%;
+}
+.imageSection:hover .image-orange-pattern{
+  position: relative;
+  transform: scale(1.05);
+}
+.imageSection .image-2{
+  z-index: 2;
+}
+.imageSection:hover .image-2{
+  position: absolute;
+ 
+  transform: scale(1.1);
+ 
+}
+.Home-main .nameSection{
+  /* background-color: cadetblue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 40%;
+  max-height: 30%;
+  
+
+}
+.Home-main .nameSection .head{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  /* background-color: aqua; */
+  /* transform: translate(2rem,-5rem); */
+  max-width: 100%;
+}
+.Home-main .nameSection .head h1{
+  font-size: 4.5rem;
+  font-weight: 300;
+  color: white;
+}
+.Home-main .nameSection .head p{
+  text-align: justify;
+  padding: 2rem;
+  color: white;
+  
+}
+.Home-main .nameSection .head .home-icons{
+/* background-color: yellowgreen; */
+width: 40%;
+display: flex;
+
+}
+.Home-main .nameSection .head a{
+  color: black;
+  width: 50%;
+  height: 100%;
+  transition: 0.2s all ease-in-out;
+}
+.Home-main .nameSection .head a:hover{
+  transform: scale(1.1);
+}
+.Home-main .nameSection .head a .insta{
+  width:50%;
+  height: 100%;
+  color: rgb(180, 70, 134)
+ }
+ .Home-main .nameSection .head a .gmail{
+  width:50%;
+  height: 100%;
+  color: red;
+ }
+ .Home-main .nameSection .head .git{
+  width:50%;
+  height: 100%;
+  color: white;
+ }
+ .Home-main .nameSection .head .linkdin{
+  width: 50%;
+  /* height: 10%; */
+ }
+ 
+ 
+.About{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: rgba(245, 245, 181, 0.411); */
+  /* background: url("../images/blue-toned-set-aligned-paper-sheets-with-copy-space.jpg"); */
+  /* background: linear-gradient(200deg,rgba(90, 158, 218, 0.308),white); */
+  background: linear-gradient(270deg,rgb(1, 42, 54),black);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.About .About-image{
+  background: url("../images/ring.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: blue; */
+ 
+  z-index: 2;
+}
+.About .About-image img{
+  max-width: 45%;
+  filter: drop-shadow(1px 10px 10px black);
+}
+.About .About-Me-content{
+  /* background-color: violet; */
+  max-width:50%;
+  text-align: justify;
+}
+.About .About-Me-content h4{
+  font-size: 24px;
+  font-weight: 450;
+  text-align: justify;
+  color: white;
+
+  
+}
+.About .About-Me-content h2{
+  font-size: 5rem;
+  font-weight: 300;
+  text-align: justify;
+  color: white;
+}
+
+.About .About-Me-content p{
+  font-size: 1rem;
+  font-weight: 450;
+  text-align: justify;
+  padding-right: 3rem;
+  color: white;
+
+}
+.About button{
+  background-color: white;
+  border: none;
+  /* border-color: rgba(0, 0, 0, 0.137);
+  color: black; */
+  color: black;
+}
+.About button:hover{
+  background-color:rgb(101, 192, 235);
+}
+.Projects{
+  /* background-color: blue; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background:url("../images/blue-toned-set-triangular-paper-sheets-with-copy-space.jpg"); */
+  background: linear-gradient(360deg,rgb(1, 42, 54),black);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Projects .Project-heading{
+  width:100%;
+}
+.Projects .Project-heading h1{
+  width:100%;
+  font-size: 5rem;
+  font-weight: 300;
+  color: white;
+}
+.Projects .card{
+  margin: 2rem;
+  transition: 0.2s all ease-in-out;
+  border: none;
+}
+.Projects .card:hover{
+  transform: scale(1.03);
+}
+.Projects .card a{
+  background-color: rgb(223, 239, 253);
+  border: none;
+  color: black;
+  width: 7rem;
+  transition: 0.2s all ease-in-out;
+}
+.Projects .card a:hover{
+  background-color: rgb(134, 212, 231);
+  border: none;
+  color: black;
+  width: 7rem;
+}
+.Projects .card img{
+  aspect-ratio: 3/2;
+  /* border-radius: 1rem; */
+  border: none;
+}
+
+.skills{
+  /* background: url("../images/blue-toned-pack-paper-sheets-with-copy-space.jpg"); */
+  background: linear-gradient(135deg,rgb(1, 42, 54),black);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+.skills .skill-content{
+  /* background-color: aliceblue; */
+  max-width: 50%;
+  height: 80vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  
+  
+}
+.skills .skill-content h1{
+  font-size: 5rem;
+  font-weight: 300;
+  margin-top: 5rem;
+  color: white;
+}
+.skills .skill-content p{
+  text-align: justify;
+  margin-top: 2rem;
+  padding: 1rem;
+  color: white;
+}
+ .skills .skills-images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 50%;
+  /* background-color: aqua; */
+
+ }
+ .skills .skills-images .card{
+  width: fit-content;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* margin: 1rem; */
+ }
+ .skills .skills-images img{
+  aspect-ratio: 15/14;
+  width: 28%;
+  transition: 0.2s all ease-in-out;
+  
+ }
+ .skills .skills-images img:hover{
+  transform: scale(1.05);
+  
+ }
+
+ .contact{
+  max-width: 100%;
+  height: 100vh;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background: url("../images/Skills.jpg"); */
+  background: linear-gradient(270deg,rgb(1, 42, 54),black);
+  background-position: center;
+  background-size: cover;
+ }
+ .contact .contact-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width:50% ;
+  /* background-color: blueviolet; */
+  height: 80vh;
+ }
+ .contact .contact-details .card{
+  width: 40%;
+  height: 36vh;
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 3/2;
+  text-align: justify;
+  border: none;
+}
+.contact .contact-details .whatsapp{
+  width: 40%;
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 3/2;
+  text-align: justify;
+}
+
+ 
+ .contact .contact-details .card img{
+    max-width:30% ;
+    aspect-ratio: 15/14;
+    margin: 1rem;
+ }
+ .contact .contact-details .card p{
+ font-size: 1rem;
+ text-align: justify;
+}
+ .contact .contact-form{
+  /* background-color: rgba(240, 248, 255, 0.63); */
+  width: 50%;
+  padding: 0 2rem ;
+  height: 80vh;
+  text-align: center;
+  margin-right:2rem ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 5px;
+  
+  /* align-items: center; */
+ }
+ .contact .contact-form h1{
+  font-size: 5rem;
+  font-weight: 300;
+  color: white;
+  
+ }
+ .contact-form button{
+   width: 50%;
+   margin-top: 1rem;
+   background-color: white;
+   border-color: rgba(0, 0, 0, 0.418);
+   color: black;
+   
+   transition: 0.2s all ease-in-out;
+ }
+ .contact-form button:hover{
+  background-color: rgb(101, 192, 235);
+ }
+
+ .contact-form form{
+  /* background-color: blueviolet; */
+  position: relative;
+  bottom: 10%;
+ }
+ .contact-form form .form-label{
+  color: white;
+ }
+
+ .footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(200deg,rgba(90, 158, 218, 0.308),white); */
+  background: linear-gradient(270deg,rgb(4, 61, 78),black);
+  height: 20vh;
+ }
+ .footer .footer-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: yellow; */
+  width: 15%;
+  height: 30%;
+  text-align: center;
+ }
+.footer .footer-icons a{
+  color: black;
+  width: 50%;
+  height: 100%;
+  transition: 0.2s all ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-icons a:hover{
+  transform: scale(1.1);
+}
+ .footer .footer-icons a .insta{
+  width:50%;
+  height: 100%;
+  color: rgb(180, 70, 134)
+ }
+ .footer .footer-icons a .gmail{
+  width:50%;
+  height: 100%;
+  color: red;
+ }
+ .footer .footer-icons a .git{
+  width:50%;
+  height: 100%;
+  color: white;
+ }
+ .footer .footer-icons a .linkdin{
+  width:50%;
+  /* height: 50%; */
+
+ }
+ 
+ 
